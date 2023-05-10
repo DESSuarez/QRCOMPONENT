@@ -1,0 +1,86 @@
+/*---------- STYLES CSS ----------*/
+/*---STARTING VALUES---*/
+:root {
+    --bgcolor: hsl(212, 45%, 89%);
+    --white: hsl(0, 0%, 100%);
+    --lightgray: hsl(220, 15%, 55%);
+    --darkblue: hsl(218, 44%, 22%);
+
+    --mainfont: 'Outfit';
+}
+
+/*--- GLOBAL ---*/
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  
+  body {
+      background-color: var(--bgcolor);
+      font-size: 1.5rem;
+      font-family: var(--mainfont);
+      color: var(--lightgray);
+      font-weight: 400;
+    }
+    
+    h1 {
+        color: var(--darkblue);
+        font-size: 2.2rem;
+        font-weight: 700;
+        margin-bottom: 2rem;
+    }
+
+/*--- HEADER ---*/
+@media (min-width: 375px) {
+   .header {
+    margin-bottom: 9rem;
+   }
+}
+
+@media (min-width: 428px) {
+    .header {
+        margin-bottom: 20rem;
+    }
+}
+
+
+/*--- MAIN ---*/
+.qrsection {
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    place-items: center;
+}
+
+.qrsection__shadow{
+    -webkit-box-shadow: 0px 11px 50px -12px rgba(207,205,207,1);
+    -moz-box-shadow: 0px 11px 50px -12px rgba(207,205,207,1);
+    box-shadow: 0px 11px 50px -12px rgba(207,205,207,1);
+    background-color: white;
+    border-radius: 2rem;
+    padding: 2rem;
+    width: 30rem;
+    height: 47rem;
+}
+
+.qrsection__shadow--img {
+    margin-bottom: 2.5rem;
+}
+
+.qrsection__shadow--text {
+    text-align: center;
+}
+
+
+/*--- FOOTER ---*/
+.footer {
+    margin-top: 15rem;
+}
+@media (min-width: 375px) {
+    .footer {
+     margin-top: 0rem;
+    }
+ }
